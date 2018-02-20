@@ -887,10 +887,6 @@ public class VComboBoxMultiselect extends Composite
 
 			// reset menu size and retrieve its "natural" size
 			this.menu.setHeight("");
-			if (VComboBoxMultiselect.this.currentPage > 0 && !hasNextPage()) {
-				// fix height to avoid height change when getting to last page
-				this.menu.fixHeightTo(VComboBoxMultiselect.this.pageLength);
-			}
 
 			// ignoring the parameter as in V7
 			offsetHeight = getOffsetHeight();
